@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tower of Hanoi</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="title">
+			<h1>Tower of Hanoi</h1>
+			<div id="timer">Time : <span id="minutes"></span>:<span id="seconds"></span></div>
+		</div><br>
+		<div class="moves"></div>
+		<br><br>
+		<div id="towers">
+			<div class="t" value="0">
+				<ul id="t1" value="0" class="base">
+					<ul class="line1"></ul>
+				</ul>
+			</div>
+			<div class="t" value="1">
+				<ul id="t2" value="1" class="base">
+					<ul class="line2"></ul>
+				</ul>
+			</div>
+			<div class="t" value="2">
+				<ul id="t3" value="2" class="base">
+					<ul class="line3"></ul>
+				</ul>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div id="disclevel">
+			<select id="box">
+				<option value="">Select a level</option>
+				<option value="3">Easy</option>
+				<option value="4">Medium</option>
+				<option value="5">Hard</option>
+			</select>
+			
+		</div>
+		<br>
+		<br>
+		<div id="start">
+			<button type="button" class="buttons">Start</button>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="js/toh.js"></script>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Tower of Hanoi</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+
+	<h1>Tower of Hanoi</h1>
+
+	<div id="container">
+		<span>Level :
+			<select>
+				<option>Easy</option>
+				<option>Medium</option>
+				<option>Hard</option>
+			</select>
+		</span>
+		<span>
+			Moves : <span>0</span>
+		</span>
+
+		<span>
+			Time : <span>0:0:0</span>
+		</span>
+		<span><button>Restart</button></span>
+
+		<div>
+			<div class="rod" ondrop="drop(event)" ondragover="allowDrop(event)">
+			  <img src="block1.png" draggable="true" ondragstart="drag(event)" id="drag1">
+			  
+			</div>
+
+			<div class="rod" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="rod" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		</div>
+	</div>
+	<script>
+		function allowDrop(ev) {
+		    ev.preventDefault();
+		}
+
+		function drag(ev) {
+		    ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+		function drop(ev) {
+		    ev.preventDefault();
+		    var data = ev.dataTransfer.getData("text");
+		    ev.target.appendChild(document.getElementById(data));
+		}
+</script>
+
+</body>
+</html> -->
